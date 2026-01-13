@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PortCity - İletişim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">ANA SAYFA</a>
+        <a href="about.html" class="nav-link">HAKKIMIZDA</a>
+        <a href="services.html" class="nav-link">AKTİVİTELER</a>
+        <a href="contact.html" class="nav-link">İLETİŞİM</a>
+        <button id="theme-toggle">🎨 Tema Değiştir</button>
+    </nav>
+
+    <div class="container">
+        <h2>Bize Ulaşın</h2>
+        <p>Adres: Liman Caddesi No:1, PortCity</p>
+
+        <form id="contact-form" style="max-width: 400px; margin: auto;">
+            <label>Ad Soyad:</label>
+            <input type="text" id="name" placeholder="Adınız...">
+            
+            <label>E-posta:</label>
+            <input type="email" id="email" placeholder="ornek@email.com">
+            
+            <label>Mesaj:</label>
+            <textarea id="message" rows="4" placeholder="Mesajınız..."></textarea>
+            
+            <button type="submit" style="width: 100%; margin-top: 10px; background-color: var(--accent);">GÖNDER</button>
+        </form>
+
+        <hr>
+        <h3>Haftalık Program</h3>
+        <table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse; text-align: left;">
+            <tr><th>Gün</th><th>Etkinlik</th></tr>
+            <tr><td>Pazartesi</td><td>Yelken Eğitimi</td></tr>
+            <tr><td>Cuma</td><td>Canlı Müzik</td></tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>© 2024 PortCity - Tasarım: Oğuz Akdoğan (20230108006)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

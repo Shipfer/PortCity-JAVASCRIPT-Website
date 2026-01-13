@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PortCity - Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">ANA SAYFA</a>
+        <a href="about.html" class="nav-link">HAKKIMIZDA</a>
+        <a href="services.html" class="nav-link">AKTİVİTELER</a>
+        <a href="contact.html" class="nav-link">İLETİŞİM</a>
+        <button id="theme-toggle">🎨 Tema Değiştir</button>
+    </nav>
+
+    <div class="container">
+        <h1>PortCity'ye Hoş Geldiniz</h1>
+        <hr>
+        <p>Şehrimizin <i>en yeni</i>, <i>en modern</i> marina bölgesi olan <b>PortCity</b>'e bekleriz.</p>
+        
+        <div style="text-align: center; margin: 20px;">
+            <img src="deniz.jpg" id="expandable-img" class="img-expandable" alt="PortCity Marina" style="width: 100%; max-width: 600px; border-radius: 10px;">
+            <p><small>(Resme tıklayarak büyütebilirsiniz)</small></p>
+        </div>
+
+        <p><u>PortCity Belediyesi</u> tarafından hizmete sunulmuştur.</p>
+        
+        <div style="text-align: center; margin-top: 20px; padding: 10px; border: 1px dashed gray;">
+            <h3>Sitemizi Beğendiniz mi?</h3>
+            <button id="like-btn">👍 Beğen</button>
+            <p>Toplam Beğeni: <strong id="like-count" style="font-size: 1.5em; color: darkred;">0</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 PortCity - Tasarım: Oğuz Akdoğan (20230108006)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

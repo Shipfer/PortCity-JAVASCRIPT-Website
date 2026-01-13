@@ -1,0 +1,120 @@
+/* Genel Ayarlar */
+:root {
+    --bg-color: #3fe2eb;
+    --text-color: #000;
+    --nav-bg: #003366;
+    --nav-text: white;
+    --container-bg: white;
+    --accent: #d35400;
+}
+
+/* Koyu Tema Değişkenleri */
+body.dark-theme {
+    --bg-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --nav-bg: #1a252f;
+    --nav-text: #bdc3c7;
+    --container-bg: #34495e;
+    --accent: #e74c3c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    transition: 0.3s;
+}
+
+/* Menü Tasarımı */
+.navbar {
+    background-color: var(--nav-bg);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: var(--nav-text);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* JS ile eklenecek 'aktif' sınıfı */
+.nav-link.active {
+    background-color: var(--accent);
+    color: white !important;
+}
+
+/* İçerik Kutuları */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: var(--container-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Butonlar */
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--nav-bg);
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Görsel Büyütme Efekti (Görev 9) */
+.img-expandable {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+    max-width: 100%;
+}
+
+.img-expandable.expanded {
+    transform: scale(1.5);
+    z-index: 999;
+    cursor: zoom-out;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Services Hover Alanı */
+.hover-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    border-left: 5px solid var(--nav-bg);
+    cursor: help;
+    color: black; /* Koyu temada yazı okunsun diye */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* İletişim Formu */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}

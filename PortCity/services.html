@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PortCity - Aktiviteler</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sadece bu sayfa için ufak düzen (Resmi sağa alma) */
+        .top-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap; /* Mobilde alt alta geçsin diye */
+        }
+        .text-area {
+            flex: 1;
+            min-width: 300px;
+        }
+        .image-area {
+            flex: 1;
+            text-align: center;
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">ANA SAYFA</a>
+        <a href="about.html" class="nav-link">HAKKIMIZDA</a>
+        <a href="services.html" class="nav-link">AKTİVİTELER</a>
+        <a href="contact.html" class="nav-link">İLETİŞİM</a>
+        <button id="theme-toggle">🎨 Tema Değiştir</button>
+    </nav>
+
+    <div class="container">
+        
+        <div class="top-section">
+            <div class="text-area">
+                <h1 style="color: var(--accent);">Neler Yapabilirsiniz?</h1>
+                <p>PortCity'de hayat 24 saat devam eder! İster gündüz güneşin tadını çıkarın, ister <b>gece mehtap turlarıyla</b> şehrin ışıklarını denizden izleyin.</p>
+
+                <h3>Öne Çıkan Aktiviteler</h3>
+                <ul id="dynamic-activities">
+                    </ul>
+            </div>
+
+            <div class="image-area">
+                <img src="tekne.jpg" alt="Gece Tekne Turu" style="width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.5);">
+                <p style="font-size: 0.9em; color: gray;"><i>Meşhur "Yakamoz" Tekne Turlarımız</i></p>
+            </div>
+        </div>
+        
+        <hr>
+
+        <h3>Detaylı Bilgi (Mouse Üzerine Getir)</h3>
+        <div class="hover-item" data-info="PortCity koylarını uzman kaptanlarla keşfedin.">🚢 Tekne Turu & Mehtap Gezisi</div>
+        <div class="hover-item" data-info="Ege'nin derinliklerindeki canlıları görün.">🤿 Dalış Deneyimi</div>
+        
+        <div id="info-display" style="min-height: 30px; color: blue; font-weight: bold; margin-top: 10px;"></div>
+
+        <hr>
+
+        <h3>Lezzet ve Keyif Durakları</h3>
+        <p>Yorgunluğunuzu atmak için harika bir mola verin. Port City'de deniz sesleri eşliğinde çay ve yemek keyfini doyasıya yaşayabilirsiniz.</p>
+
+        <div style="text-align: center; margin-top: 15px;">
+            <img src="kafe.jpg" alt="PortCity Kafe ve Restoran" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+            <p><small>PortCity Sahil Kafesi</small></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 PortCity - Tasarım: Oğuz Akdoğan (20230108006)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
